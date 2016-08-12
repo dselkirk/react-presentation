@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>React</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="bower_components/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="bower_components/reveal.js/css/theme/night.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="bower_components/reveal.js/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="bower_components/reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+        <section>
+            <h1>React</h1>
+
+            <p>
+                <small>
+                    Created by <a href="https://github.com/dselkirk" target="_blank">Dennis Selkirk</a><br/>
+                </small>
+            </p>
+        </section>
+        <section>
+            <section>
+                <h1>Назад в прошлое</h1>
+            </section>
+            <section>
+                <h1>Сначала был <a href="http://vanilla-js.com/" target="_blank">VanillaJS</a></h1>
+            </section>
+            <section>
+                <h1>Затем пришел <a href="http://jquery.com/" target="_blank">jQuery</a></h1>
+            </section>
+            <section>
+                <h1>Первое поколение - MVC-фреймворки</h1>
+            </section>
+            <section>
+                <h2 class="fragment">Model</h2>
+                <h2 class="fragment">View</h2>
+                <h2 class="fragment">Controller</h2>
+            </section>
+            <section>
+                <h1>BackboneJS</h1>
+                <a href="http://todomvc.com/examples/backbone/" target="_blank">ToDo</a>
+            </section>
+            <section>
+                <h1>Второе поколение - MVVM-фреймворки</h1>
+            </section>
+            <section>
+                <h1>AngularJS 1</h1>
+                <a href="http://todomvc.com/examples/angularjs/#/" target="_blank">ToDo</a>
+            </section>
+            <section>
+                <h2 class="fragment">EmberJS</h2>
+                <h2 class="fragment">KnockoutJS</h2>
+                <h2 class="fragment">DurandalJS</h2>
+                <h2 class="fragment">CanJS</h2>
+            </section>
+            <section>
+                <h1>React</h1>
+            </section>
+            <section>
+                <h2 class="fragment">Только View</h2>
+                <h2 class="fragment">Компонентный подход</h2>
+                <h2 class="fragment">Virtual DOM</h2>
+            </section>
+            <section>
+                <h3>W3C-спецификация - Shadow DOM</h3>
+                <h3>Virtual DOM</h3>
+            </section>
+            <section>
+                <h1>Когда?</h1>
+                <h3>Когда данные изменяются и нуждается в обновлении.</h3>
+            </section>
+            <section>
+                <h3>dirty checking - опрашивать данные через регулярные промежутки времени и рекурсивно проверять все значения в структуре данных.</h3>
+                <h3>observable - наблюдение за изменением состояния.</h3>
+            </section>
+            <section>
+                <h1>Как?</h1>
+                <ul>
+                    <li>
+                        <h3>Эффективные алгоритмы сравнения</h3>
+                    </li>
+                    <li>
+                        <h3>Группировка операций чтения/записи при работе с DOM</h3>
+                    </li>
+                    <li>
+                        <h3>Эффективное обновление только под-деревьев</h3>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Серверный рендеринг</h3>
+                <h3>HMR</h3>
+            </section>
+            <section>
+                <h1>React Native</h1>
+            </section>
+            <section>
+                <h2 class="fragment">Preact - легковесная альтернатива React</h2>
+                <h2 class="fragment">MithrillJS - использует Virtual DOM</h2>
+                <h2 class="fragment">VueJS - похож на Angular и React</h2>
+                <h2 class="fragment">Aurelia - соответствует веб-стандартам</h2>
+            </section>
+            <section>
+                <h1>Что учить?</h1>
+                <ul>
+                    <li>
+                        <h3>Angular 1, React</h3>
+                    </li>
+                    <li>
+                        <h3>Angular 2</h3>
+                    </li>
+                    <li>
+                        <h3>Vue, Aurelia</h3>
+                    </li>
+                    <li>
+                        <h3>Ember, Backbone</h3>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <h1>Полезные ресурсы</h1>
+            <ul>
+                <li>
+                    <a href="http://andrewhfarmer.com/starter-project/" target="_blank">Подбор boilerplate</a>
+                </li>
+                <li>
+                    <a href="https://github.com/facebookincubator/create-react-app" target="_blank">Быстрое развертывание React-приложения</a>
+                </li>
+                <li>
+                    <a href="https://habrahabr.ru/company/tcsbank/blog/303580/" target="_blank">Как мы разрабатываем новый фронтенд Tinkoff.ru</a>
+                </li>
+                <li>
+                    <a href="https://maxfarseer.gitbooks.io/redux-course-ru/content/" target="_blank">Курс по React</a>
+                </li>
+            </ul>
+        </section>
+               <section style="text-align: left;">
+            <h1>КОНЕЦ</h1>
+
+            <p>
+                - <a href="https://github.com/dselkirk/react-presentation">Source</a>
+            </p>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="bower_components/reveal.js/lib/js/head.min.js"></script>
+<script src="bower_components/reveal.js/js/reveal.js"></script>
+
+<script>
+
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'concave', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+            {
+                src: 'bower_components/reveal.js/lib/js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: 'bower_components/reveal.js/plugin/markdown/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'bower_components/reveal.js/plugin/markdown/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: 'bower_components/reveal.js/plugin/highlight/highlight.js', async: true, condition: function () {
+                return !!document.querySelector('pre code');
+            }, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {src: 'bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true},
+            {src: 'bower_components/reveal.js/plugin/notes/notes.js', async: true}
+        ]
+    });
+
+</script>
+
+</body>
+</html>
